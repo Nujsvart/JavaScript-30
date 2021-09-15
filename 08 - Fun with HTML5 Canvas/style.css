@@ -1,0 +1,27 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(18, 17, 27);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.attr {
+  color: rgb(190, 194, 186);
+  position: absolute;
+  bottom: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(236, 211, 67);
+}
