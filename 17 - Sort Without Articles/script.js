@@ -13,3 +13,18 @@ const bands = [
   "Anywhere But Here",
   "An Old Dog",
 ];
+
+const bandEl = document.querySelector("#bands");
+
+const regEx = /^(an?|the)\s+?/i;
+
+const strip = bandName => bandName.replace(regEx, "").trim();
+
+const sortedBands = bands.sort((a, b) => strip(a) > strip(b));
+
+bandEl.insertAdjacentHTML(
+  "beforeend",
+  sortedBands.map(band => `<li>${band}</li>`).join("")
+);
+
+/* bandEl.innerHTML = sortedBands.map(band => `<li>${band}</li>`).join("") */
