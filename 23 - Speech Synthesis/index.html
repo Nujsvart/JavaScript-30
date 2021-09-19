@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Siribaz</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Pacifico"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="voiceinator">
+      <h1>Siribaz</h1>
+
+      <select name="voice" id="voices">
+        <option value="">Konuşmacı Seç</option>
+      </select>
+
+      <label for="rate">Hız:</label>
+      <input name="rate" type="range" min="0" max="3" value="1" step="0.1" />
+
+      <label for="pitch">Ton:</label>
+
+      <input name="pitch" type="range" min="0" max="2" step="0.1" />
+      <textarea name="text">Hanimiş Oğlum Dumuş</textarea>
+      <button id="stop">Durdur</button>
+      <button id="speak">Konuştur</button>
+    </div>
+    <p class="attr">
+      Coded by <a href="https://github.com/Nujsvart">Esra Discordia</a>
+    </p>
+  </body>
+</html>
