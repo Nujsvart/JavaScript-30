@@ -29,8 +29,6 @@ function peep() {
   const time = randomTime(200, 1000);
   const hole = randomHole(holes);
   hole.classList.add("up");
-  audio.currentTime = 0;
-  audio.play();
 
   setTimeout(() => {
     hole.classList.remove("up");
@@ -54,6 +52,8 @@ function startGame() {
 function bonk(e) {
   if (!e.isTrusted) return;
   score++;
+  audio.currentTime = 0;
+  audio.play();
   this.classList.remove("up");
   scoreBoard.textContent = score;
 }
